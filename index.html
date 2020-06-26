@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chiFouMi</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section>
+            <h1>Jeu du ChiFouMi</h1>
+        </section>
+
+        <section class="userChoice">
+
+            <h2>Faites votre choix</h2>
+
+            <div class="choice">
+
+                <input type="button" class="btn" id="pierre" value="pierre" onclick="choice(this)">
+                <input type="button" class="btn" id="papier" value="papier" onclick="choice(this)">
+                <input type="button" class="btn" id="ciseaux" value="ciseaux" onclick="choice(this)">
+
+            </div>
+
+        </section>
+
+        <h2>Choix de l'ordinateur</h2>
+
+        <section class="computerChoice" style="font-size: 50px; color: red;">
+        </section>
+
+        <section class="result">
+
+            <h3 id="result"></h3>
+
+        </section>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
